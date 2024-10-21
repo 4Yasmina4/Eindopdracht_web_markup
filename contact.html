@@ -8,6 +8,9 @@
         <meta name="author" content="Yasmina Baalla">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+         <!-- iconen -->
+         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+
         <link rel="stylesheet" type="text/css" href="./css/style.css">
     </head>
 
@@ -25,103 +28,121 @@
                 </ul>
             </nav>
         </header> 
-        <!-- pagina titel -->
-        <article>
-            <h1>Neem contact met ons op</h1>
-            <h3>Wij helpen u graag verder!
-                Hieronder kunt u de manieren vinden hoe u met ons in contact kunt komen.
-            </h3>
+
+        <section>
+            <!-- contact foto -->
             <figure>
-                <img src="./image/contact_image.jpg" alt="Contact us" title="Contact">
+                <img src="./image/contact_us_image.jpg" alt="Contact us" title="Contact">
             </figure>
-        </article> 
-        <!-- e-mail ons -->
-        <article>
-            <h2>E-mail Ons</h2>
-            <p>
-                U kunt uw vragen altijd naar ons mailen. Stuur uw vragen naar het volgende e-mailadres:
-                <a href="mailto:Helpdesk@outlook.com">Helpdesk@outlook.com</a>
-            </p>
-        </article> 
-        <!-- bel ons -->
-        <article>
-            <h2>Bel Ons</h2>
-            <p>
-                U kunt ons ook bellen als u dat liever wilt. Wij zijn telefonisch beschikbaar op ma t/m vr van
-                09:00 u - 16:00 u. U kunt dan bellen naar het volgende nummer:
-                <a href="#">(+31) 020 4085159</a> 
-            </p>
-        </article> 
-        <!-- contactformulier optie -->
-        <article>
-            <h2>Vul het contactformulier in</h2>
-            <p>U kunt er ook voor kiezen om de onderstaande conatactformulier in te vullen. Wij proberen dan zo snel
-               mogelijk al uw vragen te beantwoorden. 
-            </p>
-        </article> 
-        <!-- contactformulier -->
-        <article>
-            <h2>contactformulier</h2>
-            <p>
-                *Let op:
-                Alle velden zijn verplicht. Dit houdt in dat u alle velden moet invullen, zodat we uw vragen zo 
-                snel mogelijk kunnen beantwoorden!
-            </p>
-            <form action="/actionpage.php">
-                <fieldset>
-                    <legend>Uw Gegevens:</legend>
-                        <label for="aanhef">Aanhef</label>
-                        <input type="radio" id="aanhef_man" name="aanhef_man" value="Dhr.">
-                        <label for="aanhef_man">Dhr.</label>
 
-                        
-                        <input type="radio" id="aanhef_vrouw" name="aanhef_vrouw" value="Mevr.">
-                        <label for="aanhef_vrouw">Mevr.</label>
+            <!-- pagina titel -->
+            <header>
+                <h1>Neem contact met ons op</h1>
+                <h3>Wij helpen u graag verder!
+                    Hieronder kunt u de manieren vinden hoe u met ons in contact kunt komen.
+                </h3>
+                
+            </header> 
+            <!-- e-mail ons -->
+            <article>
+                <h2>E-mail Ons</h2>
+                <p>
+                    U kunt uw vragen altijd naar ons mailen. Stuur uw vragen naar het volgende e-mailadres:
+                    <a href="mailto:Helpdesk@outlook.com">Helpdesk@outlook.com</a>
+                </p>
+            </article> 
 
-                        <label for="voornaam">Voornaam</label>
-                        <input type="text" id="voornaam" name="voornaam" placeholder="*Uw Voornaam">
+            <!-- bel ons -->
+            <article>
+                <h2>Bel Ons</h2>
+                <p>
+                    U kunt ons ook bellen als u dat liever wilt. Wij zijn telefonisch beschikbaar op ma t/m vr van
+                    09:00 u - 16:00 u. U kunt dan bellen naar het volgende nummer:
+                    <a href="#">(+31) 020 4085159</a> 
+                </p>
+            </article> 
 
-                        <label for="achternaam">Achternaam</label>
-                        <input type="text" id="achternaam" name="achternaam" placeholder="*Uw Achternaam">
+            <!-- contactformulier optie -->
+            <article>
+                <h2>Vul het contactformulier in</h2>
+                <p>U kunt er ook voor kiezen om de onderstaande conatactformulier in te vullen. Wij proberen dan zo snel
+                mogelijk al uw vragen te beantwoorden. 
+                </p>
+            </article> 
 
-                        <label for="telefoonnummer">Telefoonnummer</label>
-                        <input type="tel" id="telefoonnummer" name="telefoonnummer" placeholder="*Uw Telefoonnummer">
+            <!-- contactformulier -->
+            <article>
+                <h2>contactformulier</h2>
+                <p>
+                    *Let op:
+                    Alle velden zijn verplicht met een *. Dit houdt in dat u alle velden moet invullen, zodat we uw vragen zo 
+                    snel mogelijk kunnen beantwoorden!
+                </p>
+                <form action="/actionpage.php">
+                    <fieldset>
+                        <legend>Uw Gegevens:</legend>
+                            <label for="aanhef">Aanhef</label>
+                            <input type="radio" id="aanhef_man" name="aanhef_man" value="Dhr.">
+                            <label for="aanhef_man">Dhr.</label>
 
-                        <label for="email">E-mailadres</label>
-                        <input type="email" id="email" name="email" placeholder="*Naam@exapmle.com">
+                            
+                            <input type="radio" id="aanhef_vrouw" name="aanhef_vrouw" value="Mevr.">
+                            <label for="aanhef_vrouw">Mevr.</label>
 
-                        <label for="vraag">Vraag</label>
-                        <input type="text" id="vraag" name="vraag" placeholder="*Uw vraag">
+                            <label for="voornaam">Voornaam</label>
+                            <input type="text" id="voornaam" name="voornaam" placeholder="*Uw Voornaam">
 
-                        <input type="submit" value="Submit">
-                </fieldset>
-            </form>
-        </article> 
+                            <label for="tussenvoegsel">Tussenvoegsel</label>
+                            <input type="text" id="tussenvoegsel" name="tussenvoegsel" placeholder="Uw tussenvoegsel van uw naam">
+
+                            <label for="achternaam">Achternaam</label>
+                            <input type="text" id="achternaam" name="achternaam" placeholder="*Uw Achternaam">
+
+                            <label for="telefoonnummer">Telefoonnummer</label>
+                            <input type="tel" id="telefoonnummer" name="telefoonnummer" placeholder="*Uw Telefoonnummer">
+
+                            <label for="email">E-mailadres</label>
+                            <input type="email" id="email" name="email" placeholder="*Naam@exapmle.com">
+
+                            <label for="vraag">Vraag</label>
+                            <input type="text" id="vraag" name="vraag" placeholder="*Uw vraag">
+
+                            <p>Zodra u op de onderstaande knop "verzenden" heeft gedrukt, wordt het formulier naar ons verstuurd.
+                               Wij proberen dan zo snel mogelijk al uw vragen te beantwoorden. 
+                            </p>
+
+                            <input type="submit" value="Verzenden">
+                    </fieldset>
+                </form>
+            </article> 
+        </section>
         <!-- footer -->
         <footer>
             <!-- pagina's in footer -->
-            <article>
-                <p>
-                    Pagina's
-                    Home
-                    Thuisnetwerk
-                    Online beveiliging
-                    Encryptie
-                    Back-up in de cloud
-                    Contact
-                </p>
-            </article>
-            <!--contact informatie in footer  -->
-            <article>
-                <p>
-                    Contacteer ons
-                    E-mail:
-                    <a href="mailto:Helpdesk@outlook.com">Helpdesk@outlook.com</a>
-                    Telefoonnummer:
-                    (+31) 020 4085159
-                    &copy;2024
-                </p>
-            </article>
+           <section>
+            <ul>
+                <li><strong>Pagina's</strong></li>
+                <li><a href="./index.html"><i class="material-icons">home</i>Home</a></li>
+                <li><a href="./thuisnetwerk.html"><i class="material-icons">language</i>Thuisnetwerk</a></li>
+                <li><a href="./onlinebeveiliging.html"><i class="material-icons">wifi</i>Online beveiliging</a></li>
+                <li><a href="./encryptie.html"><i class="material-icons">lock_outline</i>Encryptie</a></li>
+                <li><a href="./backupindecloud.html"><i class="material-icons">backup</i>Back-up in de cloud</a></li>
+                <li><a class="current_page" href="./contact.html"><i class="material-icons">chat_bubble</i>Contact</a></li>
+            </ul>
+        </section>
+
+        <!-- conatact informatie in footer -->
+        <section>
+            <ul>
+                <li><strong>Contacteer ons</strong></li>
+                <li>E-mail:</li>
+                <li><a class="footer_info_link" href="mailto:Helpdesk@outlook.com">Helpdesk@outlook.com</a></li> 
+                <li>Telefoonnummer:</li>
+                <li><a class="footer_info_link"  href="#">(+31) 020 4085159</a></li>
+            </ul>
+            <!-- logo -->
+            <img src="./image/logo_website.png" alt="logo contains a light blue with purple shield" title="Guardify"> 
+        </section>   
 
         </footer> 
 

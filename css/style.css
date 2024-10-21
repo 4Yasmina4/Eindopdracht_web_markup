@@ -182,7 +182,7 @@ footer ul li a:hover{
     padding: 10px;
 }
 
-#current_page{
+.current_page{
     color: pink;
     text-decoration: underline;
 }
