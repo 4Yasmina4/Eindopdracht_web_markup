@@ -1,0 +1,193 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    margin: 40px;
+}
+
+/* navigatiemenu */
+nav{
+    background-color: #6489C6; 
+    background-image: linear-gradient(to right, #6489C6, #DFC8FA);
+    /* margin: 20px; */
+    border: 2px solid black;
+}
+
+nav ul{
+    list-style: none;
+    display: flex; 
+    justify-content: end;
+}
+
+nav ul li{
+    margin: 0px 15px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    display: block;
+    color: #000000;
+    padding: 15px 20px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    overflow: hidden;
+     /* text-align: right;  */
+    
+}
+
+nav ul li a:hover{
+    background-color: orange;
+    text-decoration: underline;
+    color: black;
+}
+
+
+/* navigatieblok op pagina waarop gebruiker is */
+.active{
+    background-color: aqua;
+}
+
+/* koppen */
+h1, h2, h3{
+    font-family: 'Poppins';
+    margin: 20px;
+    background-color: #6489C6;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+h1{
+    font-size: 32px;
+    font-weight: 400;
+}
+
+h2, h3{
+    font-size: 28px;
+    font-weight: 400;
+}
+
+/* bodytekst */
+p{
+    margin: 20px;
+    background-color: yellow;
+    /* lettertype later wijzigen */
+    font-family: Arial;
+    font-size: 20px;
+}
+
+#introductietekst{
+
+    font-size: 24px;
+    text-align: center;
+    padding:10px;
+}
+
+#content_tekst{
+    margin: 20px;
+    padding: 10px;
+}
+
+
+
+/* foto's */
+#home_foto{ 
+    width: 100%;
+
+} 
+
+#thuisnetwerk_foto{
+    margin: 20px;
+}
+
+#goedkope_router{
+    margin: 20px;
+    width: 50%;
+}
+
+/* table */
+table{
+    /* width: 100%; */
+    margin: 20px;
+    /* veranderen!!! */
+    width: 97%;
+}
+
+th, td{
+    text-align: left;
+    padding: 10px;
+    /* later veranderen naar gekozen lettertype!!!! */
+    font-family: Arial; 
+}
+
+th{
+    background-color: #DFC8FA; 
+    color: black;
+}
+
+tr:nth-child(even){
+    background-color: #EFE1FF;
+}
+
+tr:nth-child(odd){
+    background-color: #DFC8FA;
+}
+
+
+/* footer */
+footer{
+    display: flex;
+    margin: 20px;
+    background-color: #6489C6;
+    background-image: linear-gradient(to right, #6489C6, #DFC8FA);
+    border: 2px solid black;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer ul li{
+    margin: 0px 15px;
+    font-family: 'Poppins';
+    color: white;
+    
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: white
+
+}
+
+footer ul li a:hover{
+    text-decoration: underline;
+    color: orange;
+}
+
+.footer_info_link{
+    color: pink;
+}
+
+#contact_informatie{
+    background-color: red;
+    margin: 20px;
+    padding: 10px;
+}
+
+#pagina_informatie{
+    background-color: green;
+    margin: 20px;
+    padding: 10px;
+}
+
+#current_page{
+    color: pink;
+    text-decoration: underline;
+}
+
+ 
+/* #groene_tekst{ */
+    /* color: green; */
+/* } */
