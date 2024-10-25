@@ -13,7 +13,7 @@ nav{
     background-image: linear-gradient(to right, #6489C6, #DFC8FA);
     margin: 20px;
     padding: 10px;
-    border: 2px solid black;
+    border: 2px solid #BFA4E8;
     display: flex;
     align-items: center;
 }
@@ -38,9 +38,7 @@ nav ul li a{
     border-radius: 8px;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
-    text-decoration: underline;
     overflow: hidden;
-     /* text-align: right;  */
     
 }
 
@@ -54,12 +52,20 @@ nav ul li a:hover{
 /* navigatieblok op pagina waarop gebruiker is */
 .active{
     background-color: #6FFFE9;
+    text-decoration: underline;
+}
+
+.active:hover{
+    background-color: #4ED1C5;
+    color: white;
+    text-decoration: underline;
 }
 
 /* ruimte tussen logo en menu items */
 nav aside{
     margin-right: 20px;
 }
+
 
 /* logo */
 nav img.logo{
@@ -75,7 +81,7 @@ p{
 }
 
 /* hero titel tekst */
-.hero_tekst{
+.hero_tekst_blauw{
     height: 300px;
     padding: 40px;
     margin: 20px;
@@ -88,8 +94,20 @@ p{
 
 }
 
+.hero_tekst_paars{
+    height: 300px;
+    padding: 40px;
+    margin: 20px;
+    background-color: #DFC8FA;
+    border: 3px solid #6FFFE9;
+    color: black;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    line-height: 3;
+}
+
 /* titel kopjes */
-.titel_blauwe_kopje{
+.blauwe_kopje_blauwe_border{
     margin: 20px;
     padding: 20px;
     background-color: #6489C6;
@@ -100,6 +118,43 @@ p{
     font-size: 24px;
     font-weight: bold;
 }
+
+.blauwe_kopje_oranje_border{
+    margin: 20px;
+    padding: 20px;
+    background-color: #6489C6;
+    border: 2px solid #FFA629;
+    color: white;
+    text-align: center;
+    font-family: 'Lato';
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.paarse_kopje_blauwe_border{
+    margin: 20px;
+    padding: 20px;
+    background-color: #DFC8FA;
+    border: 2px solid #6FFFE9;
+    color: black;
+    text-align: center;
+    font-family: 'Lato';
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.paarse_kopje_oranje_border{
+    margin: 20px;
+    padding: 20px;
+    background-color: #DFC8FA;
+    border: 2px solid #FFA629;
+    color: black;
+    text-align: center;
+    font-family: 'Lato';
+    font-size: 24px;
+    font-weight: bold;
+}
+
 
 /* bodytekst */
 p{
@@ -120,22 +175,141 @@ p{
     padding: 10px;
 }
 
-
-
-
 /* foto's */
-#home_foto{ 
-    width: 100%;
-
-} 
-
 #thuisnetwerk_foto{
     margin: 20px;
+    border: 2px solid #FFA629;
 }
 
-#goedkope_router{
+#goedkope_router, #authenticatie_app{
     margin: 20px;
     width: 50%;
+    border: 2px solid #FFA629;
+}
+
+#authenticatie_app{
+
+}
+
+#google_drive_logo, #dropbox_logo, #one_drive_logo, #icloud_logo{
+    border: 3px solid black;
+    margin-left: 45px;
+    margin-top: 30px;
+    width: 230px;
+    height: 130px;
+}
+
+
+figcaption{
+    font-family: 'Nunito Sans';
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+/* grote hero foto's */
+.hero_image{
+    margin: 20px;
+    border: 2px solid #6FFFE9;
+}
+
+.hero_image_orange_border{
+    margin: 20px;
+    border: 2px solid #FFA629;
+}
+
+/* knoppen */
+button{
+    background-color: #FFA629;
+    border-radius: 8px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Nunito Sans';
+    font-size: 20px;
+    padding: 25px 40px;
+    margin: 20px;
+
+}
+
+button a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Nunito Sans';
+    font-size: 20px;
+}
+
+button:hover{
+    background-color: #E59420;
+}
+
+button:hover a{
+    color:white;
+    text-decoration: underline;
+}
+
+article button{
+    margin-left: 65px;
+}
+
+/* cloud apps */
+.blauwe_kopje_cloud_app{
+    background-color: #6489C6;
+    border: 3px solid black;
+    color: white;
+    font-family: 'Lato';
+    text-align: center;
+    padding: 15px;
+    margin-top: 60px;
+
+
+    /* padding: 15px;
+    margin-left: 80px;
+    margin-bottom: 30px;  */
+}
+
+.paarse_kopje_cloud_app{
+    background-color: #DFC8FA;
+    border: 3px solid black;
+    color: black;
+    font-family: 'Lato';
+    text-align: center;
+    padding: 15px;
+    margin-top: 60px;
+}
+
+.cloud_app_blok_blauw{
+    background-color: #6489C6;
+    border: 3px solid black;
+    margin-top: 15px;
+    /* line-height: 2; */
+/* 
+    padding: 15px;  */
+}
+
+.cloud_app_blok_paars{
+    background-color: #DFC8FA;
+    border: 3px solid black;
+    margin-top: 15px;
+
+}
+
+.gehele_blok{
+    margin-left: 400px;
+    width: 330px;
+
+}
+
+.alle_blokken{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cloud_app_button{
+    margin-left: 65px;
+    margin-bottom: 40px;
+    width: 200px;
 }
 
 /* table */
@@ -172,30 +346,41 @@ tr:nth-child(odd){
     border: 3px solid #6FFFE9;
     font-family: 'Nunito Sans';
     font-weight: bold;
-    
     color: white;
 }
 
-.feitje h2{
+.feitje h2, .paarse_feitje{
     text-align: center;
     font-family: 'Nunito Sans';
     padding-top: 50px;
 }
 
-.feitje p{
+.feitje p, .paarse_feitje p{
     margin-top: 30px;
     margin-left: 70px;
     margin-right: 70px;
     margin-bottom: 100px;
 }
 
+.paarse_feitje{
+    margin: 20px;
+    background-color: #DFC8FA;
+    border: 3px solid #6FFFE9;
+    font-family: 'Nunito Sans';
+    font-weight: bold;
+    color: black;
+}
+
 /* footer */
 footer{
     display: flex;
-    margin: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
     background-color: #6489C6;
     background-image: linear-gradient(to right, #6489C6, #DFC8FA);
     border: 2px solid black;
+    position: relative;
 }
 
 footer ul{
@@ -203,10 +388,20 @@ footer ul{
 }
 
 footer ul li{
+    display: flex;
+    align-items: center;
     margin: 0px 15px;
     font-family: 'Lato';
     color: white;
     
+}
+
+/* icoontjes */
+footer ul li i{
+    /* margin-left: 10px; */
+    /* margin-right: 20px; */
+    margin-right: 8px;
+    font-size: 20px;
 }
 
 footer ul li a{
@@ -221,22 +416,125 @@ footer ul li a:hover{
 }
 
 .footer_info_link{
-    color: pink;
+    color: #6FFFE9;
 }
 
+/* contact informatie
 .contact_informatie{
-    background-color: red;
-    margin: 20px;
-    padding: 10px;
-}
+    text-align: right;
+    letter-spacing: normal;
+    /* margin: 30px; */
+    /* padding:20px; */
+    /* background-color: green;
+    /* line-height: 3; */
+/* } */
 
-.pagina_informatie{
-    background-color: green;
-    margin: 20px;
-    padding: 10px;
-}
+ /* .pagina_informatie{
+    display: flex;
+    align-items: flex-start; */ 
+    /* margin: 30px; */
+    /* background-color: red; */
+    /* line-height: 3; */
+    /* padding-bottom: 15px; */
+ /* } */ 
+
+  /* evenveel ruimte tusen pagina's en contact */
+/* .pagina_informatie, .contact_informatie{
+    flex: 1;
+ }
+
+ /* copyright */
+ footer .copyright{
+    /* position: absolute; */
+    /* margin: 30px; */
+    /* padding: 20px; */
+    /* padding: 10px; */
+    bottom: 10px;
+    left: 50%;
+    color: white;
+    font-family: 'Lato';
+    background-color: pink;
+ }
+
+ /* logo in footer */
+ .logo_footer{
+    width: 200px;
+ }
 
 .current_page{
-    color: pink;
+    color: #6FFFE9;
     text-decoration: underline;
 }
+
+/* contactformulier */
+form{
+    /* max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: pink;
+    border: 2px solid greenyellow;
+    border-radius: 10px; */
+    display: flex;
+    flex-direction: column;
+}
+
+.contactformulier{
+    margin: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+label{
+    margin-bottom: 10px;
+    font-weight: bold;
+    margin-left: 20px;
+    line-height: 2;
+}
+
+input[type="text"], input[type="tel"], input[type="email"], textarea{
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #6489C6;
+    border-radius: 8px;
+    width: 80%;
+    box-sizing: border-box;
+    font-size: 16px;
+    display: block;
+    margin-left: 20px;
+}
+
+textarea{
+    min-height: 100px;
+    resize: vertical;
+}
+
+input[tyoe="submit"]{
+    padding: 12px;
+    background-color: pink;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]{
+    font-size: 14px;
+    padding: 10px;
+}
+
+.form_groep, .form_groep_aanhef{
+    font-family: 'Nunito Sans';
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+
+
+/* form fieldset{
+    border: none;
+} */
+
+/* .form-groep{
+    margin-bottom: 15px;
+}  */

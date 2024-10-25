@@ -40,7 +40,7 @@
         </header> 
 
         <!-- pagina titel -->
-        <header>
+        <header class="hero_tekst_blauw">
             <h1>Back-ups in de cloud</h1>
             <h3>Back-ups maken in de cloud</h3>
         </header>
@@ -48,20 +48,19 @@
         <!--vragen + antwoorden (artikels)  -->
         <section>
             <article>
-                <h2>Waarom is het handig om back-ups in de cloud te maken?</h2>
-                <p>Tegenwoordig werken er steeds meer mensen met de cloud. Misschien maakt u nu ook gebruik
+                <h2 class="blauwe_kopje_oranje_border">Waarom is het handig om back-ups in de cloud te maken?</h2>
+                <p class="content_tekst">Tegenwoordig werken er steeds meer mensen met de cloud. Misschien maakt u nu ook gebruik
                 van de cloud zonder dat u het doorheeft. U kunt hierbij denken aan het gebruiken van 
                 apps zoals OneDrive, Dropbox, Google Drive en iCloud. Door back-ups te maken van uw bestanden
                 en gegevens naar de cloud kunt u deze bestanden en gegevens ophalen op het moment dat u ze 
                 nodig heeft. Dit kunt u vanuit verschillende (mobiele) apparaten doen die toegang hebben tot 
                 het internet. Bovendien zijn uw bestanden en gegevens beschermd tegen onverwachte noodgevallen
                 en beschadiging. 
-
                 </p>
             </article>
 
             <!-- feitje -->
-            <article>
+            <article class="feitje">
                 <h2>Wist u dat ...</h2>
                 <p>Een cloud-back-up vaak automatisch gebeurt? Zo hoeft u niet handmatig kopieën te maken van
                    uw bestanden. Dit zorgt ervoor dat u altijd de meest recente versie van uw belangrijke
@@ -70,58 +69,78 @@
             </article>
 
             <article>
-                <h2>Hoe maak je back-ups in de cloud?</h2>
-                <p>Hieronder kunt u de 4 meest gebruikte apps vinden waarmee u back-ups kunt maken in de cloud. 
+                <h2 class="blauwe_kopje_oranje_border">Hoe maak je back-ups in de cloud?</h2>
+                <p class="content_tekst">Hieronder kunt u de 4 meest gebruikte apps vinden waarmee u back-ups kunt maken in de cloud. 
                 Als u op de knop klikt, wordt u doorverwezen naar de website van de eigenaar van de app.  
                 </p>
             </article>
 
-            <article>
-                <!-- Google Drive -->
-                <h2>Google Drive</h2>
-                <figure>
-                    <img src="./image/googledrive_logo.png" alt="Google Drive logo" title="Google Drive">
-                </figure>    
-                <button>
-                    <a href="https://drive.google.com/drive/my-drive">Google Drive</a>
-                </button>
-            </article> 
+            <!-- Google Drive -->
+            <section class="gehele_blok">    
+                <article class="blauwe_kopje_cloud_app">
+                    <h2>Google Drive</h2>
+                </article>
+
+                <article class="cloud_app_blok_blauw">
+                    <figure>
+                        <img id="google_drive_logo" src="./image/googledrive_logo.png" alt="Google Drive logo" title="Google Drive">
+                    </figure>    
+                    <button class="cloud_app_button">
+                        <a href="https://drive.google.com/drive/my-drive">Google Drive</a>
+                    </button>
+                </article> 
+            </section>
 
             <!-- Dropbox -->
-            <aritcle>
-                <h2>Dropbox</h2>
-                <figure>
-                    <img src="./image/dropbox_logo.png" alt="Dropbox logo" title="Dropbox">
-                </figure>    
-                <button>
-                    <a href="https://www.dropbox.com/">Dropbox</a>
-                </button>
-            </aritcle> 
+            <section class="gehele_blok"> 
+                <article class="blauwe_kopje_cloud_app">
+                    <h2>Dropbox</h2>
+                </article>
+
+                <article class="cloud_app_blok_blauw">
+                    <figure>
+                        <img id="dropbox_logo" src="./image/dropbox_logo.png" alt="Dropbox logo" title="Dropbox">
+                    </figure>    
+                    <button class="cloud_app_button">
+                        <a href="https://www.dropbox.com/">Dropbox</a>
+                    </button>
+                </aritcle> 
+            </section>
 
             <!-- OneDrive -->
-            <article> 
-                <h2>OneDrive</h2>
-                <figure>
-                    <img src="./image/onedrive_logo.png" alt="OneDrive logo" title="OneDrive">
-                </figure>    
-                <button>
-                    <a href="https://onedrive.com/">OneDrive</a>
-                </button>
-            </article> 
+            <section class="gehele_blok"> 
+                <article class="paarse_kopje_cloud_app"> 
+                    <h2>OneDrive</h2>
+                </article>
+
+                <article class="cloud_app_blok_paars">
+                    <figure>
+                        <img id="one_drive_logo" src="./image/onedrive_logo.png" alt="OneDrive logo" title="OneDrive">
+                    </figure>    
+                    <button class="cloud_app_button">
+                        <a href="https://onedrive.com/">OneDrive</a>
+                    </button>
+                </article> 
+            </section>
 
             <!-- iCloud -->
-            <article>
-                <h2>iCloud</h2>
-                <figure>
-                    <img src="./image/icloud_logo.png" alt="iCloud logo" title="iCloud">
-                </figure>
-                <button>
-                    <a href="https://www.icloud.com/">iCloud</a>
-                </button>
-            </article> 
+            <section class="gehele_blok"> 
+                <article class="paarse_kopje_cloud_app">
+                    <h2>iCloud</h2>
+                </article>
+
+                <article class="cloud_app_blok_paars">
+                    <figure>
+                        <img id="icloud_logo" src="./image/icloud_logo.png" alt="iCloud logo" title="iCloud">
+                    </figure>
+                    <button class="cloud_app_button">
+                        <a href="https://www.icloud.com/">iCloud</a>
+                    </button>
+                </article> 
+            </section>
 
             <!-- feitje -->
-            <article>
+            <article class="feitje">
                 <h2>Wist u dat ...</h2>
                 <p>U bij een back-up in de cloud uw gegevens niet kwijtraakt, zelfs als uw apparaat
                    kapotgaat of gestolen wordt? Al uw bestanden staan veilig opgeslagen en zijn altijd

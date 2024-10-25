@@ -45,7 +45,7 @@
             </figure>
 
             <!-- pagina titel -->
-            <header>
+            <header class="hero_tekst_paars">
                 <h1>Neem contact met ons op</h1>
                 <h3>Wij helpen u graag verder!
                     Hieronder kunt u de manieren vinden hoe u met ons in contact kunt komen.
@@ -72,7 +72,7 @@
             </article> 
 
             <!-- contactformulier optie -->
-            <article>
+            <article class="hero_tekst_paars">
                 <h2>Vul het contactformulier in</h2>
                 <p>U kunt er ook voor kiezen om de onderstaande conatactformulier in te vullen. Wij proberen dan zo snel
                 mogelijk al uw vragen te beantwoorden. 
@@ -80,47 +80,70 @@
             </article> 
 
             <!-- contactformulier -->
-            <article>
-                <h2>contactformulier</h2>
-                <p>
-                    *Let op:
-                    Alle velden zijn verplicht met een *. Dit houdt in dat u alle velden moet invullen, zodat we uw vragen zo 
-                    snel mogelijk kunnen beantwoorden!
-                </p>
-                <form action="/action_page.php">
+            <h2 class="blauwe_kopje_oranje_border">Contactformulier</h2>
+            <article class="contactformulier">
+                <!-- <h2 class="blauwe_kopje_oranje_border">Contactformulier</h2> -->
+         
+                <form action="/action_page.php" method="POST">
                     <fieldset>
                         <legend>Uw Gegevens:</legend>
+                        <p class="content_tekst">
+                            *Let op:
+                            Alle velden zijn verplicht met een *. Dit houdt in dat u alle velden moet invullen, zodat we uw vragen zo 
+                            snel mogelijk kunnen beantwoorden!
+                        </p>
+                        <!--aanhef -->
+                        <section class="form_groep_aanhef">
                             <label for="aanhef">Aanhef</label>
                             <input type="radio" id="aanhef_man" name="aanhef_man" value="Dhr.">
                             <label for="aanhef_man">Dhr.</label>
-
-                            
+        
                             <input type="radio" id="aanhef_vrouw" name="aanhef_vrouw" value="Mevr.">
                             <label for="aanhef_vrouw">Mevr.</label>
+                        </section>
 
+                        <!-- voornaam -->
+                        <section class="form_groep">
                             <label for="voornaam">Voornaam</label>
-                            <input type="text" id="voornaam" name="voornaam" placeholder="*Uw Voornaam">
+                            <input type="text" id="voornaam" name="voornaam" placeholder="*Uw Voornaam" required>
+                        </section>
 
+                        <!-- tussenvoegsel -->
+                        <section class="form_groep"> 
                             <label for="tussenvoegsel">Tussenvoegsel</label>
                             <input type="text" id="tussenvoegsel" name="tussenvoegsel" placeholder="Uw tussenvoegsel van uw naam">
+                        </section>
 
+                        <!-- achternaam -->
+                        <section class="form_groep"> 
                             <label for="achternaam">Achternaam</label>
-                            <input type="text" id="achternaam" name="achternaam" placeholder="*Uw Achternaam">
+                            <input type="text" id="achternaam" name="achternaam" placeholder="*Uw Achternaam" required>
+                        </section>  
 
+                        <!-- telefoonnummer -->
+                        <section class="form_groep">
                             <label for="telefoonnummer">Telefoonnummer</label>
-                            <input type="tel" id="telefoonnummer" name="telefoonnummer" placeholder="*Uw Telefoonnummer">
+                            <input type="tel" id="telefoonnummer" name="telefoonnummer" placeholder="*Uw Telefoonnummer" required>
+                        </section>
 
+                        <!-- email -->
+                        <section class="form_groep"> 
                             <label for="email">E-mailadres</label>
-                            <input type="email" id="email" name="email" placeholder="*Naam@exapmle.com">
+                            <input type="email" id="email" name="email" placeholder="*Naam@exapmle.com" required>
+                        </section>
 
+                        <!-- vraag -->
+                        <section class="form_groep">
                             <label for="vraag">Vraag</label>
-                            <input type="text" id="vraag" name="vraag" placeholder="*Uw vraag">
+                            <textarea id="vraag" name="vraag" placeholder="*Uw vraag" required></textarea>
+                        </section>
 
-                            <p>Zodra u op de onderstaande knop "verzenden" heeft gedrukt, wordt het formulier naar ons verstuurd.
-                               Wij proberen dan zo snel mogelijk al uw vragen te beantwoorden. 
-                            </p>
+                        <!-- versturen -->
+                        <p>Zodra u op de onderstaande knop "verzenden" heeft gedrukt, wordt het formulier naar ons verstuurd.
+                           Wij proberen dan zo snel mogelijk al uw vragen te beantwoorden. 
+                        </p>
 
-                            <input type="submit" value="Verzenden">
+                        <input type="submit" value="Verzenden">
                     </fieldset>
                 </form>
             </article> 
