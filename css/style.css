@@ -36,7 +36,7 @@ nav ul li a{
     color: #000000;
     padding: 10px 15px;
     border-radius: 8px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato';
     font-size: 16px;
     overflow: hidden;
     
@@ -255,21 +255,31 @@ p{
     float: none;
     border-style: double;
     border-color: #6FFFE9;
+    width: 97.5%;
 
 }
 /* grote hero foto's */
 .hero_image_blauwe_border{
     margin: 20px;
     border: 2px solid #6FFFE9;
-    width: 1779px;
-    height: 800px;
+    width: 97.5%;
+    height: auto;
+    max-height: 800px;
+
 }
 
-.hero_image_oranje_border, #goedkope_router{
+#goedkope_router{
+    border: 2px solid #FFA629;
+    margin: 20px;
+    
+}
+
+.hero_image_oranje_border{
     margin: 20px;
     border: 2px solid #FFA629;
-    width: 1779px;
-    height: 800px;
+    width: 97.5%;
+    height: auto;
+    max-height: 800px;
 }
 
 figcaption{
@@ -347,6 +357,7 @@ article button{
     margin-top: 15px;
 
 }
+
 
 .gehele_blok{
     width: 330px;
@@ -615,6 +626,29 @@ legend{
     text-transform: uppercase;
 }
 
+/* cookie bericht */
+.cookies_bericht{
+    background-color: #6489C6;
+    color: white;
+    position: fixed;
+    bottom: 35px;
+    left: 35%;
+    padding: 15px;
+    border: 3px solid #E59420;
+    z-index: 9999;
+    font-family: 'Lato';
+
+}
+
+.accepteer_cookies_button{
+    margin-left: 70px;
+}
+
+.weiger_cookies_button{
+    float: right;
+    margin-right: 70px;
+}
+
 /* footer*/
 footer{
     background-color: #6489C6;
@@ -625,7 +659,6 @@ footer{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    /* align-items: start; */
     align-items: flex-start;
 
 }
@@ -732,3 +765,24 @@ footer{
 }
 
 
+/* mobiele schermen */
+@media (max-width: 768px) {
+    nav{
+        display: none;
+    }
+
+    .mobile-nav{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #6489C6;
+        background-image: linear-gradient(to right, #6489C6, #DFC8FA);
+        border: 1px solid #BFA4E8;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 0px;
+        z-index: 1000;
+
+    }
+}
