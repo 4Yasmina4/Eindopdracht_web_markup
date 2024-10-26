@@ -45,7 +45,7 @@
         <section>
             <!-- contact foto -->
             <figure>
-                <img src="./image/contact_us_image.jpg" alt="Contact us" title="Contact">
+                <img id="contact_foto" src="./image/contact_us_image.jpg" alt="Contact us" title="Contact">
             </figure>
 
             <!-- pagina titel -->
@@ -56,24 +56,27 @@
                 </h3>
                 
             </header> 
-            <!-- e-mail ons -->
-            <article>
-                <h2>E-mail Ons</h2>
-                <p>
-                    U kunt uw vragen altijd naar ons mailen. Stuur uw vragen naar het volgende e-mailadres:
-                    <a href="mailto:Helpdesk@outlook.com">Helpdesk@outlook.com</a>
-                </p>
-            </article> 
 
-            <!-- bel ons -->
-            <article>
-                <h2>Bel Ons</h2>
-                <p>
-                    U kunt ons ook bellen als u dat liever wilt. Wij zijn telefonisch beschikbaar op ma t/m vr van
-                    09:00 u - 16:00 u. U kunt dan bellen naar het volgende nummer:
-                    <a href="#">(+31) 020 4085159</a> 
-                </p>
-            </article> 
+            <section id="mail_bel_ons">
+                <!-- e-mail ons -->
+                <article id="mail_ons">
+                    <h2>E-mail Ons</h2>
+                    <p>
+                        U kunt uw vragen altijd naar ons mailen. Stuur uw vragen naar het volgende e-mailadres:
+                    </p>
+                    <p><a href="mailto:Helpdesk@outlook.com">Helpdesk@outlook.com</a></p>
+                </article> 
+
+                <!-- bel ons -->
+                <article id="bel_ons">
+                    <h2>Bel Ons</h2>
+                    <p>
+                        U kunt ons ook bellen als u dat liever wilt. Wij zijn telefonisch beschikbaar op ma t/m vr van
+                        09:00 u - 16:00 u. U kunt dan bellen naar het volgende nummer:
+                    </p>
+                    <p> <a href="#">(+31) 020 4085159</a> </p>
+                </article> 
+            </section>
 
             <!-- contactformulier optie -->
             <article class="hero_tekst_paars">
@@ -98,12 +101,14 @@
                         </p>
                         <!--aanhef -->
                         <section class="form_groep_aanhef">
-                            <label for="aanhef">Aanhef</label>
-                            <input type="radio" id="aanhef_man" name="aanhef_man" value="Dhr.">
-                            <label for="aanhef_man">Dhr.</label>
-        
-                            <input type="radio" id="aanhef_vrouw" name="aanhef_vrouw" value="Mevr.">
-                            <label for="aanhef_vrouw">Mevr.</label>
+                            <!-- <label for="aanhef">Aanhef</label> -->
+                            <label>Aanhef</label> 
+                            <label for="aanhef_man" class="aanhef_label"><input type="radio" id="aanhef_man" name="aanhef_man" value="Dhr.">Dhr.</label>
+                            <!-- <input type="radio" id="aanhef_man" name="aanhef_man" value="Dhr."> -->
+                            <!-- <label for="aanhef_man">Dhr.</label> -->
+                            <label for="aanhef_vrouw"class="aanhef_label"><input type="radio" id="aanhef_vrouw" name="aanhef_man" value="Mevr.">Mevr.</label>
+                            <!-- <input type="radio" id="aanhef_vrouw" name="aanhef_vrouw" value="Mevr."> -->
+                            <!-- <label for="aanhef_vrouw">Mevr.</label> -->
                         </section>
 
                         <!-- voornaam -->
@@ -143,9 +148,11 @@
                         </section>
 
                         <!-- versturen -->
-                        <p>Zodra u op de onderstaande knop "verzenden" heeft gedrukt, wordt het formulier naar ons verstuurd.
-                           Wij proberen dan zo snel mogelijk al uw vragen te beantwoorden. 
-                        </p>
+                        <section>
+                            <p>*Zodra u op de onderstaande knop "verzenden" heeft gedrukt, wordt het formulier naar ons verstuurd.
+                            Wij proberen dan zo snel mogelijk al uw vragen te beantwoorden. 
+                            </p>
+                        </section>
 
                         <input type="submit" value="Verzenden">
                     </fieldset>

@@ -176,17 +176,6 @@ p{
 }
 
 /* foto's */
-#thuisnetwerk_foto{
-    margin: 20px;
-    border: 2px solid #FFA629;
-}
-
-#goedkope_router, #authenticatie_app{
-    margin: 20px;
-    width: 50%;
-    border: 2px solid #FFA629;
-}
-
 #authenticatie_app{
 
 }
@@ -199,24 +188,31 @@ p{
     height: 130px;
 }
 
+#contact_foto{
+    margin: 20px;
+    width: 1779px;
+    height: 800px;
+}
+/* grote hero foto's */
+.hero_image_blauwe_border{
+    margin: 20px;
+    border: 2px solid #6FFFE9;
+    width: 1779px;
+    height: 800px;
+}
+
+.hero_image_oranje_border, #goedkope_router{
+    margin: 20px;
+    border: 2px solid #FFA629;
+    width: 1779px;
+    height: 800px;
+}
 
 figcaption{
     font-family: 'Nunito Sans';
     margin-left: 20px;
     padding-left: 20px;
 }
-
-/* grote hero foto's */
-.hero_image{
-    margin: 20px;
-    border: 2px solid #6FFFE9;
-}
-
-.hero_image_orange_border{
-    margin: 20px;
-    border: 2px solid #FFA629;
-}
-
 
 /* knoppen */
 button{
@@ -230,6 +226,7 @@ button{
     font-size: 20px;
     padding: 25px 40px;
     margin: 20px;
+    cursor: pointer;
 
 }
 
@@ -371,19 +368,67 @@ tr:nth-child(odd){
     color: black;
 }
 
+/* e-mail ons blok */
+#mail_ons{
+    margin: 50px;
+    background-color: #6489C6;
+    padding: 15px;
+    border: 2px solid #E59420;
+    flex: 1;
+    min-width: 250px; 
+    height: 500px;
+}
+
+/* bel ons blok */
+#bel_ons{
+    margin: 50px;
+    background-color: #6489C6;
+    padding: 15px;
+    border: 2px solid #6FFFE9;
+    flex: 1;
+    min-width: 250px;
+}
+
+#mail_ons h2, #bel_ons h2{
+    font-family: 'Lato';
+    color: white;
+    font-size: 2rem;
+    font-weight: 400px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
+#mail_ons p, #bel_ons p{
+    font-family: 'Nunito Sans';
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
 
 
+#mail_ons a, #bel_ons a{
+    font-family: 'Nunito Sans';
+    color: #6FFFE9;
+    text-decoration: underline;
+}
+
+#mail_bel_ons{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 90px;
+}
 
 /* contactformulier */
 form{
-    /* max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: pink;
-    border: 2px solid greenyellow;
-    border-radius: 10px; */
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin: 20px 0px;
 }
 
 .contactformulier{
@@ -395,7 +440,6 @@ form{
 label{
     margin-bottom: 10px;
     font-weight: bold;
-    margin-left: 20px;
     line-height: 2;
 }
 
@@ -404,11 +448,12 @@ input[type="text"], input[type="tel"], input[type="email"], textarea{
     margin-bottom: 20px;
     border: 1px solid #6489C6;
     border-radius: 8px;
-    width: 80%;
+    width: 90%;
     box-sizing: border-box;
     font-size: 16px;
+    font-family: 'Nunito Sans';
     display: block;
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 textarea{
@@ -416,20 +461,30 @@ textarea{
     resize: vertical;
 }
 
-input[tyoe="submit"]{
-    padding: 12px;
-    background-color: pink;
-    color: white;
+/* verzendknop contactformulier */
+input[type="submit"]{
+    padding: 25px 40px;
+    margin-top: 20px;
+    background-color: #FFA629;
+    border-radius: 8px;
     border: none;
-    border-radius: 5px;
+    color: black;
+    text-align: center;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 20px;
+    font-family: 'Nunito Sans';
+    margin-left: 600px;
+    margin-bottom: 40px;
+    width: 300px;
+} 
+
+/* hover effect */
+input[type="submit"]:hover{
+    background-color: #E59420;
+    color: white;
+    text-decoration: underline;
 }
 
-input[type="submit"]{
-    font-size: 14px;
-    padding: 10px;
-}
 
 .form_groep, .form_groep_aanhef{
     font-family: 'Nunito Sans';
@@ -437,16 +492,26 @@ input[type="submit"]{
     margin-left: 20px;
 }
 
+.form_groep_aanhef{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+.aanhef_label{
+    display: inline-block;
+    margin-right: 15px;
+}
 
 
-/* form fieldset{
-    border: none;
-} */
-
-/* .form-groep{
-    margin-bottom: 15px;
-}  */
-
+.aanhef_label input[type="radio"]{
+    margin-right: 10px;
+}
+legend{
+    color: black;
+    font-size: 20px;
+    font-family: 'Nunito Sans';
+}
 
 /* footer*/
 footer{
