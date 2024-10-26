@@ -28,6 +28,10 @@
         <!-- navigatiemenu -->
         <header>
             <nav>
+                <!-- Logo -->
+                <aside>
+                    <img class="logo" src="./image/logo.png" alt="logo contains a light blue with purple shield" titel="Guaridfy">
+                </aside>
                 <ul>
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./thuisnetwerk.html">Thuisnetwerk</a></li>
@@ -75,68 +79,71 @@
                 </p>
             </article>
 
-            <!-- Google Drive -->
-            <section class="gehele_blok">    
-                <article class="blauwe_kopje_cloud_app">
-                    <h2>Google Drive</h2>
-                </article>
 
-                <article class="cloud_app_blok_blauw">
-                    <figure>
-                        <img id="google_drive_logo" src="./image/googledrive_logo.png" alt="Google Drive logo" title="Google Drive">
-                    </figure>    
-                    <button class="cloud_app_button">
-                        <a href="https://drive.google.com/drive/my-drive">Google Drive</a>
-                    </button>
-                </article> 
-            </section>
+            <section class="alle_blokken">    
+                <!-- Google Drive -->
+                <section class="gehele_blok">    
+                    <article class="blauwe_kopje_cloud_app">
+                        <h2>Google Drive</h2>
+                    </article>
 
-            <!-- Dropbox -->
-            <section class="gehele_blok"> 
-                <article class="blauwe_kopje_cloud_app">
-                    <h2>Dropbox</h2>
-                </article>
+                    <article class="cloud_app_blok_blauw">
+                        <figure>
+                            <img id="google_drive_logo" src="./image/googledrive_logo.png" alt="Google Drive logo" title="Google Drive">
+                        </figure>    
+                        <button class="cloud_app_button">
+                            <a href="https://drive.google.com/drive/my-drive">Google Drive</a>
+                        </button>
+                    </article> 
+                </section>
 
-                <article class="cloud_app_blok_blauw">
-                    <figure>
-                        <img id="dropbox_logo" src="./image/dropbox_logo.png" alt="Dropbox logo" title="Dropbox">
-                    </figure>    
-                    <button class="cloud_app_button">
-                        <a href="https://www.dropbox.com/">Dropbox</a>
-                    </button>
-                </aritcle> 
-            </section>
+                <!-- Dropbox -->
+                <section class="gehele_blok"> 
+                    <article class="blauwe_kopje_cloud_app">
+                        <h2>Dropbox</h2>
+                    </article>
 
-            <!-- OneDrive -->
-            <section class="gehele_blok"> 
-                <article class="paarse_kopje_cloud_app"> 
-                    <h2>OneDrive</h2>
-                </article>
+                    <article class="cloud_app_blok_blauw">
+                        <figure>
+                            <img id="dropbox_logo" src="./image/dropbox_logo.png" alt="Dropbox logo" title="Dropbox">
+                        </figure>    
+                        <button class="cloud_app_button">
+                            <a href="https://www.dropbox.com/">Dropbox</a>
+                        </button>
+                    </aritcle> 
+                </section>
 
-                <article class="cloud_app_blok_paars">
-                    <figure>
-                        <img id="one_drive_logo" src="./image/onedrive_logo.png" alt="OneDrive logo" title="OneDrive">
-                    </figure>    
-                    <button class="cloud_app_button">
-                        <a href="https://onedrive.com/">OneDrive</a>
-                    </button>
-                </article> 
-            </section>
+                <!-- OneDrive -->
+                <section class="gehele_blok"> 
+                    <article class="paarse_kopje_cloud_app"> 
+                        <h2>OneDrive</h2>
+                    </article>
 
-            <!-- iCloud -->
-            <section class="gehele_blok"> 
-                <article class="paarse_kopje_cloud_app">
-                    <h2>iCloud</h2>
-                </article>
+                    <article class="cloud_app_blok_paars">
+                        <figure>
+                            <img id="one_drive_logo" src="./image/onedrive_logo.png" alt="OneDrive logo" title="OneDrive">
+                        </figure>    
+                        <button class="cloud_app_button">
+                            <a href="https://onedrive.com/">OneDrive</a>
+                        </button>
+                    </article> 
+                </section>
 
-                <article class="cloud_app_blok_paars">
-                    <figure>
-                        <img id="icloud_logo" src="./image/icloud_logo.png" alt="iCloud logo" title="iCloud">
-                    </figure>
-                    <button class="cloud_app_button">
-                        <a href="https://www.icloud.com/">iCloud</a>
-                    </button>
-                </article> 
+                <!-- iCloud -->
+                <section class="gehele_blok"> 
+                    <article class="paarse_kopje_cloud_app">
+                        <h2>iCloud</h2>
+                    </article>
+
+                    <article class="cloud_app_blok_paars">
+                        <figure>
+                            <img id="icloud_logo" src="./image/icloud_logo.png" alt="iCloud logo" title="iCloud">
+                        </figure>
+                        <button class="cloud_app_button">
+                            <a href="https://www.icloud.com/">iCloud</a>
+                        </button>
+                    </article> 
+                </section>
             </section>
 
             <!-- feitje -->
@@ -152,7 +159,7 @@
         <!-- footer -->
         <footer>
            <!-- pagina's in footer -->
-           <section>
+           <section class="pagina_informatie">
             <ul>
                 <li><strong>Pagina's</strong></li>
                 <li><a href="./index.html"><i class="material-icons">home</i>Home</a></li>
@@ -165,7 +172,7 @@
         </section>
 
         <!-- conatact informatie in footer -->
-        <section>
+        <section class="contact_informatie">
             <ul>
                 <li><strong>Contacteer ons</strong></li>
                 <li>E-mail:</li>
@@ -173,11 +180,17 @@
                 <li>Telefoonnummer:</li>
                 <li><a class="footer_info_link"  href="#">(+31) 020 4085159</a></li>
             </ul>
+            
             <!-- logo -->
-            <aside>
-                <img src="./image/logo_website.png" alt="logo contains a light blue with purple shield" title="Guardify">
-            </aside> 
-        </section>   
+            <aside> 
+                <img class="logo_footer" src="./image/logo.png" alt="logo contains a light blue with purple shield" title="Guardify"> 
+            </aside>
+        </section> 
+
+        <!-- copyright-->
+        <section class="copyright">
+            <p>Copyright &copy;2024</p>
+        </section> 
         </footer> 
     </body>
 </html>

@@ -217,6 +217,7 @@ figcaption{
     border: 2px solid #FFA629;
 }
 
+
 /* knoppen */
 button{
     background-color: #FFA629;
@@ -261,11 +262,6 @@ article button{
     text-align: center;
     padding: 15px;
     margin-top: 60px;
-
-
-    /* padding: 15px;
-    margin-left: 80px;
-    margin-bottom: 30px;  */
 }
 
 .paarse_kopje_cloud_app{
@@ -282,9 +278,6 @@ article button{
     background-color: #6489C6;
     border: 3px solid black;
     margin-top: 15px;
-    /* line-height: 2; */
-/* 
-    padding: 15px;  */
 }
 
 .cloud_app_blok_paars{
@@ -295,8 +288,8 @@ article button{
 }
 
 .gehele_blok{
-    margin-left: 400px;
     width: 330px;
+    margin-bottom: 10px;
 
 }
 
@@ -304,7 +297,14 @@ article button{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 10px;
 }
+
+/* specifiek google drive 1e blok */
+/* .gehele_blok:nth-child(1){
+    margin-right: 5px;
+
+} */
 
 .cloud_app_button{
     margin-left: 65px;
@@ -371,100 +371,8 @@ tr:nth-child(odd){
     color: black;
 }
 
-/* footer */
-footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 20px;
-    background-color: #6489C6;
-    background-image: linear-gradient(to right, #6489C6, #DFC8FA);
-    border: 2px solid black;
-    position: relative;
-}
 
-footer ul{
-    list-style: none;
-}
 
-footer ul li{
-    display: flex;
-    align-items: center;
-    margin: 0px 15px;
-    font-family: 'Lato';
-    color: white;
-    
-}
-
-/* icoontjes */
-footer ul li i{
-    /* margin-left: 10px; */
-    /* margin-right: 20px; */
-    margin-right: 8px;
-    font-size: 20px;
-}
-
-footer ul li a{
-    text-decoration: none;
-    color: white
-
-}
-
-footer ul li a:hover{
-    text-decoration: underline;
-    color: orange;
-}
-
-.footer_info_link{
-    color: #6FFFE9;
-}
-
-/* contact informatie
-.contact_informatie{
-    text-align: right;
-    letter-spacing: normal;
-    /* margin: 30px; */
-    /* padding:20px; */
-    /* background-color: green;
-    /* line-height: 3; */
-/* } */
-
- /* .pagina_informatie{
-    display: flex;
-    align-items: flex-start; */ 
-    /* margin: 30px; */
-    /* background-color: red; */
-    /* line-height: 3; */
-    /* padding-bottom: 15px; */
- /* } */ 
-
-  /* evenveel ruimte tusen pagina's en contact */
-/* .pagina_informatie, .contact_informatie{
-    flex: 1;
- }
-
- /* copyright */
- footer .copyright{
-    /* position: absolute; */
-    /* margin: 30px; */
-    /* padding: 20px; */
-    /* padding: 10px; */
-    bottom: 10px;
-    left: 50%;
-    color: white;
-    font-family: 'Lato';
-    background-color: pink;
- }
-
- /* logo in footer */
- .logo_footer{
-    width: 200px;
- }
-
-.current_page{
-    color: #6FFFE9;
-    text-decoration: underline;
-}
 
 /* contactformulier */
 form{
@@ -538,3 +446,119 @@ input[type="submit"]{
 /* .form-groep{
     margin-bottom: 15px;
 }  */
+
+
+/* footer*/
+footer{
+    background-color: #6489C6;
+    background-image: linear-gradient(to right, #6489C6, #DFC8FA);
+    border: 3px solid #BFA4E8;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* align-items: start; */
+    align-items: flex-start;
+
+}
+
+
+.pagina_informatie ul, .contact_informatie ul{
+    list-style: none;
+}
+
+.pagina_informatie li, .contact_informatie li{
+    margin: 8px 0px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: 'Nunito Sans';
+    font-size: 20px;
+    line-height: 2;
+    letter-spacing: normal;
+    word-spacing: normal;
+    
+}
+
+.pagina_informatie a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.material-icons{
+    font-size: 24px;
+    color: white;
+    margin-right: 30px;
+}
+
+.pagina_informatie{
+    width: 40%;
+    margin-left: 80px;
+}
+
+.contact_informatie{
+    margin-right: 80px;
+}
+
+.pagina_informatie, .contact_informatie{
+    padding: 15px;
+    margin-top: 30px;
+}
+
+.contact_informatie aside img{
+    width: 200px;
+    margin-top: 10px;
+}
+
+.pagina_informatie .current_page, .footer_info_link{
+    color: #6FFFE9;
+    text-decoration: underline;
+}
+
+.pagina_informatie .current_page .material-icons{
+    color: #6FFFE9;
+
+}
+
+
+
+.copyright{
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    color: white;
+    position: relative;
+}
+
+.copyright p{
+    position: relative;
+    padding-left: 15px;
+}
+
+/* lijn voor copyright */
+.copyright p::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 45%;
+    height: 2px;
+    background-color: white;
+    margin-top: -1px;
+}
+
+/* lijn na copyright */
+.copyright p::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 44%;
+    height: 2px;
+    background-color: white;
+    margin-top: -1px;
+}
+
+
