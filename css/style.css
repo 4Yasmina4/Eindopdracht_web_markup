@@ -82,10 +82,10 @@ body{
     padding: 40px;
     margin: 20px;
     background-color: #6489C6;
-    /* border: 3px solid #6FFFE9; */
     border-width: 3px;
     border-style: solid;
     border-image-source: linear-gradient(#B0FFEC, #6FFFE9);
+    border-image-slice: 1;
     color: white;
     font-family: 'Lato', sans-serif;
     text-align: center;
@@ -100,7 +100,10 @@ body{
     padding: 40px;
     margin: 20px;
     background-color: #DFC8FA;
-    border: 3px solid #6FFFE9;
+    border-width: 3px;
+    border-style: solid;
+    border-image-source: linear-gradient(#B0FFEC, #6FFFE9);
+    border-image-slice: 1;
     color: black;
     font-family: 'Lato', sans-serif;
     text-align: center;
@@ -254,11 +257,6 @@ p{
 
 #google_drive_logo, #dropbox_logo, #one_drive_logo, #icloud_logo{
     border: 3px solid black;
-    /* margin-left: 45px; */
-    /* margin-top: 30px; */
-    /* width: 230px; */
-    /* height: 130px; */
-
     max-width: 80%;
     height: auto;
     margin: 10px 0px;
@@ -274,11 +272,14 @@ p{
 }
 /* grote hero foto's */
 .hero_image_blauwe_border{
-    margin: 20px;
+    display: block;
+    margin: 20px auto;
     border: 2px solid #6FFFE9;
-    width: 97.5%;
     height: auto;
     max-height: 800px;
+    width: 85%;
+
+    
 
 }
 
@@ -428,7 +429,10 @@ tr:nth-child(odd){
 .feitje{
     margin: 20px;
     background-color: #6489C6;
-    border: 3px solid #6FFFE9;
+    border-width: 3px;
+    border-style: solid;
+    border-image-source: linear-gradient(#B0FFEC, #6FFFE9);
+    border-image-slice: 1;
     font-weight: bold;
     margin-bottom: 50px;
 }
@@ -450,7 +454,6 @@ tr:nth-child(odd){
     font-size: 2em;
     color: #6FFFE9;
     font-weight: bold;
-    /* float: left; */
     margin-right: 5px;
 } 
 
@@ -470,7 +473,10 @@ tr:nth-child(odd){
 .paarse_feitje{
     margin: 20px;
     background-color: #DFC8FA;
-    border: 3px solid #6FFFE9;
+    border-width: 3px;
+    border-style: solid;
+    border-image-source: linear-gradient(#B0FFEC, #6FFFE9);
+    border-image-slice: 1;
     font-family: 'Nunito Sans';
     font-weight: bold;
     color: black;
