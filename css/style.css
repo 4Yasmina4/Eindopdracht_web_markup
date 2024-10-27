@@ -400,10 +400,9 @@ article button{
 
 /* table */
 table{
-    /* width: 100%; */
-    margin: 20px;
-    /* veranderen!!! */
-    width: 97%;
+    margin: 20px auto;
+    width: 90%;
+    margin-bottom: 100px;
 }
 
 th, td{
