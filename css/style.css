@@ -48,7 +48,6 @@ body{
     color: white;
 }
 
-
 /* navigatieblok op pagina waarop gebruiker is */
 .active{
     background-color: #6FFFE9;
@@ -65,7 +64,6 @@ body{
 .desktop_navigatie aside{
      margin-right: 20px;
 }
-
 
 /* logo */
 .desktop_navigatie img.logo{
@@ -214,7 +212,6 @@ body{
     font-size: 16px;
 }
 
-
 #content_tekst_4{
     margin-right: 20px;
     font-family: 'Nunito Sans';
@@ -222,7 +219,6 @@ body{
     margin-left: 35px;
     padding: 10px;
 }
-
 
 /* bodytekst */
 p{
@@ -241,8 +237,6 @@ p{
     padding: 10px;
     margin-bottom: 50px;
 }
-
-
 
 /* foto's */
 #authenticatie_app{
@@ -268,8 +262,8 @@ p{
     border-style: double;
     border-color: #6FFFE9;
     width: 97.5%;
-
 }
+
 /* grote hero foto's */
 .hero_image_blauwe_border{
     display: block;
@@ -279,28 +273,29 @@ p{
     max-height: 800px;
     width: 85%;
 
-    
-
 }
 
 #goedkope_router{
+    display: block;
     border: 2px solid #FFA629;
-    margin: 20px;
+    margin: 20px auto;
+    height: auto;
+    max-height: 800px;
     
 }
 
 .hero_image_oranje_border{
-    margin: 20px;
+    display: block;
+    margin: 20px auto;
     border: 2px solid #FFA629;
-    width: 97.5%;
+    width: 85%;
     height: auto;
     max-height: 800px;
 }
 
 figcaption{
     font-family: 'Nunito Sans';
-    margin-left: 20px;
-    padding-left: 20px;
+    text-align: center;
 }
 
 /* knoppen */
@@ -336,7 +331,8 @@ button:hover a{
 }
 
 article button{
-    margin-left: 65px;
+    margin-left: 150px;
+    margin-bottom: 50px;
 }
 
 /* cloud apps */
@@ -374,7 +370,6 @@ article button{
 
 }
 
-
 .gehele_blok{
     text-align: center;
     margin-bottom: 20px;
@@ -391,7 +386,6 @@ article button{
     justify-content: space-between;
     margin: 20px;
 }
-
 
 .cloud_app_button{
     margin-left: 30px;
@@ -524,7 +518,6 @@ tr:nth-child(odd){
     margin-right: 40px;
 }
 
-
 #mail_ons a, #bel_ons a{
     font-family: 'Nunito Sans';
     color: #6FFFE9;
@@ -625,8 +618,6 @@ input[type="submit"]:hover{
     margin-right: 10px;
 }
 
-
-
 legend{
     color: black;
     font-size: 20px;
@@ -681,9 +672,7 @@ footer{
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: flex-start;
-
 }
-
 
 .pagina_informatie ul, .contact_informatie ul{
     list-style: none;
@@ -699,7 +688,6 @@ footer{
     line-height: 2;
     letter-spacing: normal;
     word-spacing: normal;
-    
 }
 
 .pagina_informatie a{
@@ -721,6 +709,15 @@ footer{
 
 .contact_informatie{
     margin-right: 80px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.logo_footer{
+    width: 100px;
+    margin-top: 10px;;
 }
 
 .pagina_informatie, .contact_informatie{
@@ -797,9 +794,12 @@ footer{
     display: none;
 }
 
-
 @media screen and (max-width: 768px) {
     .desktop_navigatie{
+        display: none;
+    }
+
+    .cookies_bericht{
         display: none;
     }
 
@@ -813,10 +813,9 @@ footer{
         background-color: #6489C6; 
         background-image: linear-gradient(to right, #6489C6, #DFC8FA); 
         z-index: 10000;
-        height: 90px;
+        height: 108px;
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
-
     }
 
     .mobiele_navigatie ul{
@@ -834,7 +833,6 @@ footer{
         padding: 10px 15px;
         text-align: center;
         padding-left: 20px;
-
     }
 
     .mobiele_navigatie .active_mobiel, .mobiele_navigatie .active_mobiel .material-icons{
@@ -884,56 +882,167 @@ footer{
         margin-top: 10px;
     }
 
-    .cookies_bericht{
-        display: none;
+    /* content tekst */
+    .content_tekst, figcaption, #content_tekst_4{
+        font-size: 16px;
+        margin: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 30px;
+        padding: 5px;
+    }
+
+    #microsoft_ondertiteling{
+        font-size: 14px;
     }
 
     /* hero tekst blauw */
-    .hero_tekst_blauw, .blauwe_kopje_blauwe_border{
+    .hero_tekst_blauw, .hero_tekst_paars{
         padding: 20px;
         margin: 150px 10px 20px;
     }
 
-    .hero_tekst_blauw h1{
+    .hero_tekst_blauw h1, .hero_tekst_paars h1{
         font-size: 1.5rem;
+        margin-top: 15px;
     }
 
-    .blauwe_kopje_blauwe_border h2{
-        font-size: 1rem;
+    .blauwe_kopje_blauwe_border, .blauwe_kopje_oranje_border, .blauwe_kopje_paarse_border, .paarse_kopje_oranje_border{
+        margin: 10px;
+        padding: 15px;
+        font-size: 18px;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
-    .hero_tekst_blauw p{
-        font-size: 1rem;
-    }
 
-    #home_foto{
+    /* foto's */
+    .hero_image_blauwe_border, .hero_image_oranje_border, #goedkope_router{
         max-width: 90%;
         width: auto;
     }
 
-    p{
-        margin: 15px;
+    #authenticatie_app{
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
     }
 
+    /* tabel */
     table{
-        margin-left: 10px;
-        margin-right: 10px;
-
+        width: 100%;
     }
 
     th, td{
-        width: 40%;
+        padding: 5px;
+        font-size: 12px;
     }
 
-    .pagina_informatie{
-        margin-top: 10px;
-        margin-left: 10px;
-        font-size: 1.5rem;
+    th{
+        text-align: center;
+        font-weight: bold;
     }
 
-    footer{
+    /* feitje */
+    .feitje, .paarse_feitje{
+        margin: 10px;
+        padding: 15px;
+        margin-bottom: 30px;
         margin-top: 30px;
+        height: 350px;
+    }
+
+    .feitje p, .paarse_feitje p{
+        font-size: 16px;
+    }
+
+    .feitje h2, .paarse_feitje h2{
+        font-size: 25px;
+    }
+
+    .paarse_feitje h2{
+        margin-top: 30px;
+    }
+
+    /* footer */
+    footer{
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        margin: 10px;
         margin-bottom: 200px;
+    }
+
+    .pagina_informatie, .contact_informatie{
+        text-align: center;
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 10px;
+    }
+
+    .pagina_informatie li, .contact_informatie li{
+        font-size: 18px;
+    }
+
+    /* iconen */
+    .material-icons{
+        font-size: 20px;
+        margin-right: 15px;
+    }
+
+
+    .copyright p{
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+        text-align: center;
+    }
+
+    /* lijnen voor en na copyright */
+    .copyright p::before{
+        width: 30%;
+        height: 1px;
+        margin: 0px 5px;
+    }
+
+    .copyright p::after{
+        /* margin-left: 20px; */
+        width: 27%;
+        height: 1px;
+        margin: 0px 10px;
+    }
+
+    /* button */
+    button{
+        font-size: 16px;
+        padding: 15px 25px;
+        margin: 15px;
+    }
+
+    button a{
+        font-size: 16px;
+    }
+
+    article button{
+        margin-left: 30px;
+        margin-bottom: 30px;
+    }
+
+    /* maatregelen */
+    .maatregel_nummer{
+        margin-right: 5px;
+        width: 30px;
+        padding: 10px;
+    }
+
+    .maatregel_heading, #maatregel_heading_vier{
+        gap: 10px;
+        margin-left: 10px;
+        margin-bottom: 20px;
     }
 
 }
