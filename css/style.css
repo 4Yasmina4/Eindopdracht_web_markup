@@ -245,7 +245,7 @@ p{
 #authenticatie_app{
     border-style: double;
     border-color: #DFC8FA;
-    border-width: solid;
+    border-width: 2px;
     max-width: 300px;
     margin-left: 20px;
     height: auto;
@@ -254,10 +254,14 @@ p{
 
 #google_drive_logo, #dropbox_logo, #one_drive_logo, #icloud_logo{
     border: 3px solid black;
-    margin-left: 45px;
-    margin-top: 30px;
-    width: 230px;
-    height: 130px;
+    /* margin-left: 45px; */
+    /* margin-top: 30px; */
+    /* width: 230px; */
+    /* height: 130px; */
+
+    max-width: 80%;
+    height: auto;
+    margin: 10px 0px;
 }
 
 #contact_foto{
@@ -341,8 +345,7 @@ article button{
     color: white;
     font-family: 'Lato';
     text-align: center;
-    padding: 15px;
-    margin-top: 60px;
+    padding: 10px;
 }
 
 .paarse_kopje_cloud_app{
@@ -351,27 +354,33 @@ article button{
     color: black;
     font-family: 'Lato';
     text-align: center;
-    padding: 15px;
-    margin-top: 60px;
+    padding: 10px;
 }
 
 .cloud_app_blok_blauw{
     background-color: #6489C6;
     border: 3px solid black;
     margin-top: 15px;
+    padding: 10px;
+    margin-bottom: 30px;
 }
 
 .cloud_app_blok_paars{
     background-color: #DFC8FA;
     border: 3px solid black;
-    margin-top: 15px;
+    margin-top: 15px; 
+    padding: 10px;
 
 }
 
 
 .gehele_blok{
-    width: 330px;
-    margin-bottom: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 30%;
+    box-sizing: border-box;
+    margin-right: 160px;
+    margin-left: 160px;
 
 }
 
@@ -379,12 +388,12 @@ article button{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 10px;
+    margin: 20px;
 }
 
 
 .cloud_app_button{
-    margin-left: 65px;
+    margin-left: 30px;
     margin-bottom: 40px;
     width: 200px;
 }
